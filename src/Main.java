@@ -10,7 +10,7 @@ public class Main {
         System.out.println();
         System.out.println(ventas[0] + " es la venta más baja");
         System.out.println(ventas[9] + " es la venta más alta");
-
+        calcularPromedio(ventas);
     }
 
 public static void capturaVentas(int [] ventas) {
@@ -44,5 +44,15 @@ public static void ordenarBurbuja(int[] ventas) {
     }
 }
 
+public static void calcularPromedio(int[] ventas) {
+    double suma = 0;
+    double promedio = 0;
+    for (int i = 0; i < ventas.length; i++) {
+        suma = suma + ventas[i];
+        promedio = suma / ventas.length;
+    }
+    System.out.println("El promedio de ventas es: " + promedio);
+
+}
 }
 

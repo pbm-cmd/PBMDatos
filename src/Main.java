@@ -5,6 +5,8 @@ public class Main {
         int [] ventas = new int[10];
         capturaVentas(ventas);
         mostrarArreglo(ventas);
+        System.out.println();
+        ordenarBurbuja(ventas);
     }
 
 public static void capturaVentas(int [] ventas) {
@@ -22,4 +24,21 @@ public static void mostrarArreglo(int [] ventas) {
     }
 }
 
+public static void ordenarBurbuja(int[] ventas) {   
+    for (int i = 0; i < ventas.length - 1; i++) {
+        for (int j = 0; j < ventas.length - 1 - i; j++) {
+            if (ventas[j] > ventas[j + 1]) {
+                int temp = ventas[j];
+                ventas[j] = ventas[j + 1];
+                ventas[j + 1] = temp;
+            }
+        }
+    }
+    System.out.println("Ventas ordenadas: ");
+    for (int i = 0; i < ventas.length; i++) {
+        System.out.print(ventas[i] + " ");
+    }
 }
+
+}
+

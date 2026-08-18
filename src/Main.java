@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class Bubble {
+public class Main {
     public static void main(String[] args) {
         int [] ventas = new int[10];
         capturaVentas(ventas);

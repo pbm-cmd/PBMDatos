@@ -7,6 +7,10 @@ public class Main {
         mostrarArreglo(ventas);
         System.out.println();
         ordenarBurbuja(ventas);
+        System.out.println();
+        System.out.println(ventas[0] + " es la venta más baja");
+        System.out.println(ventas[9] + " es la venta más alta");
+
     }
 
 public static void capturaVentas(int [] ventas) {
